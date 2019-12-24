@@ -23,7 +23,7 @@
                         <div class="card-title">Overall statistics</div>
                         <div class="card-category">Daily information about statistics in system</div>
                         <div class="d-flex flex-wrap justify-content-around pb-2 pt-4">
-                        <form method="POST" action="/user/email-add/">
+                        <form method="POST" action="">
                             {% csrf_token %}
                             {% if form.title.errors %}
                             {% for err_title in form.title.errors %}
