@@ -34,6 +34,7 @@ class emailsave(CreateView):
 class emailedit(UpdateView):
     model = EmailUser
     fields = '__all__'
+    success_url = reverse_lazy('emaillist')
 
 
 class emaildelete(DeleteView):
